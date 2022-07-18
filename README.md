@@ -16,6 +16,12 @@ PUT: /customers/{id}
 1. Install [IntelliJ IDEA Ultimate](https://www.jetbrains.com/ru-ru/idea/download)
     - fork customer-service project;
 2.  Run application. 
+    - Go to the [inject](http://localhost:8083/customers/inject) point to inject some data.
+    - Send GET request to fetch some filtered data. For example: 
+      - to fetch all customers with lastNameIn Shevchenko and postCodeIn SE48XA \
+       http://localhost:8083/customers?lastNameIn=Shevchenko&postCodeIn=SE48XA
+      - to fetch all customers with lastNameIn Shevchenko and postCodeIn SE48XA or 03057 \
+       http://localhost:8083/customers?lastNameIn=Shevchenko&postCodeIn=SE48XA,03057
 3.  The DB connecting: http://localhost:8083/h2-console \
     Properties:\
     Driver Class: org.h2.Driver\
